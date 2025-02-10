@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  cursor: pointer;
+  padding-top: 70px;
+  overflow-x: hidden;
+}
+
+.content {
+  z-index: 1;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 45px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+header{
+  padding-bottom: 70px;
+}
+
+ul a {
+  transition: all 0.5s ease-in;
+  position: relative;
+  font-family: Arial;
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+
+  text-decoration: none;
+}
+nav {
+    display: flex;
+gap: 32px;
+    align-items: center;
+  flex-shrink: 0;
+  padding-left: 30px;
+  padding-right: 18px;
+}
+.hd-h2 {
+  font-weight: 800;
+  width: 700px;
+  letter-spacing: 4px;
+  font-family: Arial;
+}
+.p-header-1::after {
+  position: absolute;
+  height: 39px;
+  align-items: center;
+  width: 0;
+
+  left: 0px;
+  padding-left: 10px;
+  right: 0;
+  transition: all 0.4s linear;
+  bottom: 0;
+  opacity: 0;
+  top: 0;
+  border-radius: 18px;
+  content: "Visit Us";
+  color: rgb(247, 243, 243);
+
+  display: flex;
+  background: linear-gradient(to right, orange, black);
+  font-weight: bold;
+}
+.p-header-1:hover::after {
+  width: 92%;
+
+  opacity: 1;
+}
+
+.p-header-1 {
+  position: relative;
+  flex-shrink: 0;
+  width: max-content;
+
+  color: white;
+  font-size: 12px;
+  font-family: Arial;
+  letter-spacing: 1px;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+
+  border-radius: 18px;
+  padding-right: 12px;
+  background-color: black;
+}
+ul a:hover {
+  color: orange;
+}
+ul a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-radius: 50px;
+  width: 0;
+  top: 15px;
+  left: 50px;
+  transition: all 0.4s linear;
+  background: linear-gradient(to right, orange, black);
+}
+ul a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+ul {
+  display: flex;
+
+  gap: 24px;
+
+  text-decoration: none;
+  list-style: none;
+}
+.slide{
+  width: 100%;
+}
+.img-slide{
+  position: relative;
+  width: 118vw;
+  height: 60vw;
+}
+p{
+  font-family: Arial;
+}
+.p-title{
+  font-size: 10px;
+  width:max-content;
+  color: black;
+  padding: 3px;
+  border-radius: 6px;
+  background-color: white;
+}
+.p-title-2{
+   width: 26rem;
+  filter: drop-shadow(0px 0px 8px);
+  color: rgba(245, 242, 242, 0.918);
+  font-size: 3rem;
+  font-weight: 800;
+}
+.p-title span{
+  color: orange;
+}
+.page-title{
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 14px;
+
+  
+}
+
+@media (max-width: 768px) {
+ 
+  .p-title-2{
+    width: 12rem;
+
+    font-size: 1.3rem;
+
+  }
+.content{
+  padding-left: 5px;
+    padding-right: 4px;
+    display: block;
+    height: 80px;
+}
+.p-header-1::after{
+    height: 33px;
+}
+
+ul{
+   gap: 13px;
+  
+}
+ul a{
+
+    font-size: 10px;
+}
+
+
+.p-header-1{
+    font-size: 9px;
+}
+nav{
+    align-items: center;
+padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.img-slide{
+  height: 100vh;
+}
+
+.slide{
+  height: 100vh;
+  object-fit: cover;
+}
+ 
+}
