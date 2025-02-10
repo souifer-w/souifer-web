@@ -173,7 +173,7 @@ p{
 .content{
   padding-left: 5px;
     padding-right: 4px;
-  
+   display:block;
     height: 80px;
 }
 .p-header-1::after{
