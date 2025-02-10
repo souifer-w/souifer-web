@@ -5,8 +5,8 @@
 body {
   cursor: pointer;
   padding-top: 70px;
-  overfllow-X:hidden;
-    overfllow-Y:hidden;
+  overflow-x: hidden;
+   overflow-y: hidden;
 }
 
 .content {
